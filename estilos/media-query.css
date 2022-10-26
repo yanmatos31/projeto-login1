@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/*
+Os pontos de interrupção comuns são 
+600px para PEQUENAS, 
+601px — 768px para CELULTAR, 
+769px — 992px para TABLET, 
+993px — 1200px para DESKTOP
+1201px acima GRANDES TELAS
+*/
+
+@media screen AND (min-width: 768px) and (max-width: 992px){
+    body{
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+    section#login{
+        width: 80vw;
+
+    }
+    section#login > div#imagem{
+        float: left;/*posicionar à esquerda*/
+        width: 30%;
+        height: 100%;
+    }
+    section#login > div#formulario {
+        float: right;/*posicionar à direita*/
+        width: 70%;
+    }
+}
+@media screen AND (min-width: 993px){
+    body{
+        background-image: linear-gradient(to left, #49a09d, #5f2c82);
+    }
+    section#login{
+        width: 90vw;
+    }
+    section#login > div#imagem{
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+    section#login > div#formulario {
+        float: right;
+        width: 50%;
+    }
+}
